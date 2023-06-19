@@ -22,3 +22,4 @@ DELETE {{url}}/mangas/5
 
 
 ### GET SINGLE MANGA
+GET {{url}}/mangas/2
