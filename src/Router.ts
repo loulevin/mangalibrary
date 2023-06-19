@@ -1,5 +1,5 @@
 import * as tools from "./tools";
-import { PageNewManga, attachPageWelcomeEvents } from "./pages/PageNewManga";
+import { PageNewManga, attachPageNewMangaEvents } from "./pages/PageNewManga";
 import { MangaList } from "./pages/MangaList";
 import { PageAbout } from "./pages/PageAbout";
 import { Page404 } from "./pages/Page404";
@@ -61,5 +61,5 @@ function getSmartCurrentPageId() {
 }
 
 export const attachEvents = () => {
-	attachPageWelcomeEvents();
+	attachPageNewMangaEvents();
 }

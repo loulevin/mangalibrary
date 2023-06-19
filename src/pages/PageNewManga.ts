@@ -1,12 +1,14 @@
+import axios from "axios";
+
 export const PageNewManga = () => {
   return /*html*/ `
 <div class="page pageNewManga">
 	<form action="data/mangal.json">
 		<fieldset>
 			<legend>New Manga enter here</legend>
-			<label class="row">Titel: <input type="text"></label>
-			<label class="row">Author: <input type="text"></label>
-			<label class="row">Band: <input type="number"></label>
+			<label class="row">Titel: <input type="text" id="title"></label>
+			<label class="row">Author: <input type="text" id="author"></label>
+			<label class="row">Band: <input type="number" id="issues"></label>
 			<label class="row">Genre <select name="genre" id="genre">
 				<option value="seinen">Seinen</option>
 				<option value="shounen">Shounen</option>
@@ -23,35 +25,40 @@ export const PageNewManga = () => {
 };
 
 
-export const attachPageWelcomeEvents = () => {
+export const attachPageNewMangaEvents = () => {
 	const apiUrl = 'http://localhost:5555';
 
-	const btn = document.querySelector('.btnContactForm');
+	const btn = document.querySelector('.btnManga');
 	btn?.addEventListener('click', (e: Event) => {
 		e.preventDefault();
 		
-		const elemFullName = document.querySelector<HTMLInputElement>('.contactForm #fullName');
-		const elemEmail = document.querySelector<HTMLInputElement>('.contactForm #email');
-		const elemAge = document.querySelector<HTMLInputElement>('.contactForm #age');
+		const elemTitle = document.querySelector<HTMLInputElement>('.contactForm #title');
+		const elemAuthor = document.querySelector<HTMLInputElement>('.contactForm #author');
+		const elemIssues = document.querySelector<HTMLInputElement>('.contactForm #issues');
+		const elemGenre = document.querySelector<HTMLInputElement>('.contactForm #genre');
 
-		const fullName = elemFullName?.value;
-		const email = elemEmail?.value;
-		const age = elemAge?.value;
+
+		const title = elemTitle?.value;
+		const author = elemAuthor?.value;
+		const issues = elemIssues?.value;
+		const genre = elemGenre?.value;
 
 		const formData = {
-			fullName,
-			email,
-			age
+			title,
+			author,
+			issues,
+			genre
 		};
 
 		(async () => {
-			const response = await axios.post(`${apiUrl}/contacts`, formData);
+			const response = await axios.post(`${apiUrl}/mangas`, formData);
 			if (response.status !== 201) {
 				console.log(response.status);
 			} else {
-				if(elemFullName) elemFullName.value = '';
-				if(elemEmail) elemEmail.value = '';
-				if(elemAge) elemAge.value = '';
+				if(elemTitle) elemTitle.value = '';
+				if(elemAuthor) elemAuthor.value = '';
+				if(elemIssues) elemIssues.value = '';
+				if(elemGenre) elemGenre.value = '';
 			}
 		})();
 	});
