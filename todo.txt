@@ -1,0 +1,12 @@
+x json server installiert
+- json server einrichten. npm scripts api npm run api
+- rest.client instation installieren
+- db.json erstellen (JavaScript (mangaitems))
+- test.rest erstellen
+    - ein get 
+    - ein post
+    - ein delete
+- form anpassen um zu speichern
+    - axios installieren
+- info seite 
+    - Mangaliste umbenennen (darstellung der Datenbank)

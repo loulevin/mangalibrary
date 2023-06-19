@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  font-size: 62.5%;
+}
+
+$fontsize: 2rem;
+$main-color: #cbe4de;
+$second-color: #0e8388;
+$activ-color: #6db4b3;
+$accent-color: #1e696c;
+$main-font-color: #2e4f4f;
+$head-color: #2c3333;
+
+body {
+  background-color: $main-color;
+  color: $main-font-color;
+  font-family: sans-serif;
+  padding: 2rem;
+  min-width: 900px;
+  max-width: 80%;
+
+  h1 {
+    color: $main-font-color;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+  }
+
+  nav {
+    margin-bottom: 2rem;
+    background-color: $second-color;
+    padding: 0.5rem;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 1rem;
+
+      li {
+        a {
+          color: #aaa;
+          text-decoration: none;
+          font-size: $fontsize;
+
+          &.active {
+            color: rgb(211, 145, 24);
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    font-size: 1.2rem;
+
+    .page404 {
+      .message404 {
+        width: 26rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #444;
+        margin-top: -2rem;
+
+        .numberArea {
+          font-size: 15rem;
+          margin-bottom: -1rem;
+        }
+
+        .message {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+fieldset {
+  padding: 1rem;
+  border: 0.2rem solid $accent-color;
+  border-radius: 1rem;
+  background-color: $activ-color;
+}
+
+legend {
+  font-size: 2rem;
+  font-weight: bold;
+  border-top: 0.2rem solid $accent-color;
+  background-color: $activ-color;
+  border-radius: 1rem;
+  padding: 0.9rem 2rem;
+}
+
+label {
+  padding: 1.5rem;
+  display: block;
+  gap: 1rem;
+  }
+
+input[type="text"],
+input[type="number"] {
+  display: block;
+  
+}
