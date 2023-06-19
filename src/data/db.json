@@ -1,0 +1,22 @@
+{
+  "mangas": [
+    {
+      "title": "Tokyo Ghoul",
+      "author": "Sui Ishida",
+      "genre": "Seinen",
+      "issues": "14"
+    },
+    {
+      "title": "Tokyo Ghoul:RE",
+      "author": "Sui Ishida",
+      "genre": "Seinen",
+      "issues": "16"
+    },
+    {
+      "title": "Neon Genesis Evengalion - Perfect Edition",
+      "author": "Hideaki Anno",
+      "genre": "Seinen",
+      "issues": "4"
+    }
+  ]
+}
