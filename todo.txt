@@ -13,3 +13,6 @@ x test.rest erstellen
     - axios installieren
 - info seite 
     - Mangaliste umbenennen (darstellung der Datenbank)
+
+- neue seite    
+    -auslesen der Datenbank
