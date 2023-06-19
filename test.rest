@@ -17,6 +17,8 @@ content-type: application/json
     "issues": "1"
 }
 
+### DELETE MANGA
+DELETE {{url}}/mangas/5
 
 
 ### GET SINGLE MANGA
