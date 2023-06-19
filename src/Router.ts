@@ -1,5 +1,5 @@
 import * as tools from "./tools";
-import { NewManga } from "./pages/NewManga";
+import { PageNewManga, attachPageWelcomeEvents } from "./pages/PageNewManga";
 import { MangaList } from "./pages/MangaList";
 import { PageAbout } from "./pages/PageAbout";
 import { Page404 } from "./pages/Page404";
@@ -12,7 +12,7 @@ export const getCurrentPage = () => {
   switch (currentPageIdCode) {
     case "":
     case "welcome":
-      return NewManga();
+      return PageNewManga();
     case "info":
       return MangaList();
     case "about":
@@ -58,4 +58,8 @@ function getSmartCurrentPageId() {
   currentPageIdCode =
     currentPageIdCode === "" ? pageNames[0].toLowerCase() : currentPageIdCode;
   return currentPageIdCode;
+}
+
+export const attachEvents = () => {
+	attachPageWelcomeEvents();
 }

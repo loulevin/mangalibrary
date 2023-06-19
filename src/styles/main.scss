@@ -79,33 +79,34 @@ body {
         }
       }
     }
+
+    .pageNewManga {
+      fieldset {
+        padding: 1rem;
+        border: 0.2rem solid $accent-color;
+        border-radius: 1rem;
+        background-color: $activ-color;
+      }
+
+      legend {
+        font-size: 2rem;
+        font-weight: bold;
+        border-top: 0.2rem solid $accent-color;
+        background-color: $activ-color;
+        border-radius: 1rem;
+        padding: 0.9rem 2rem;
+      }
+
+      label {
+        padding: 1.5rem;
+        display: block;
+        gap: 1rem;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        display: block;
+      }
+    }
   }
-}
-
-fieldset {
-  padding: 1rem;
-  border: 0.2rem solid $accent-color;
-  border-radius: 1rem;
-  background-color: $activ-color;
-}
-
-legend {
-  font-size: 2rem;
-  font-weight: bold;
-  border-top: 0.2rem solid $accent-color;
-  background-color: $activ-color;
-  border-radius: 1rem;
-  padding: 0.9rem 2rem;
-}
-
-label {
-  padding: 1.5rem;
-  display: block;
-  gap: 1rem;
-  }
-
-input[type="text"],
-input[type="number"] {
-  display: block;
-  
 }

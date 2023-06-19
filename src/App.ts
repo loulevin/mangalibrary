@@ -1,5 +1,5 @@
 import './styles/main.scss';
-import { getMenu, getCurrentPage } from './Router';
+import { getMenu, getCurrentPage, attachEvents } from './Router';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
 <header>
@@ -10,3 +10,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML =/* html */`
 	${getCurrentPage()}
 </main>
 `;
+
+attachEvents();
