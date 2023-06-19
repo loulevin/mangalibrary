@@ -1,0 +1,22 @@
+@url = http://localhost:5555
+	
+### BASE
+GET {{url}}
+
+### GET MANGAS
+GET {{url}}/mangas
+ 
+### ADD MANGA
+POST {{url}}/mangas
+content-type: application/json
+     
+{
+    "title": "Sailor Moon",
+    "author": "Naoko Takeuchi",
+    "genre": "Shoujo",
+    "issues": "1"
+}
+
+
+
+### GET SINGLE MANGA

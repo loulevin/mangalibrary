@@ -1,6 +1,6 @@
 x json server installiert
-- json server einrichten. npm scripts api npm run api
-- rest.client instation installieren
+x json server einrichten. npm scripts api npm run api
+- rest.client installtion installieren
 - db.json erstellen (JavaScript (mangaitems))
 - test.rest erstellen
     - ein get 

@@ -4,19 +4,36 @@
       "title": "Tokyo Ghoul",
       "author": "Sui Ishida",
       "genre": "Seinen",
-      "issues": "14"
+      "issues": "14",
+      "id": 1
     },
     {
       "title": "Tokyo Ghoul:RE",
       "author": "Sui Ishida",
       "genre": "Seinen",
-      "issues": "16"
+      "issues": "16",
+      "id": 2
     },
     {
       "title": "Neon Genesis Evengalion - Perfect Edition",
       "author": "Hideaki Anno",
       "genre": "Seinen",
-      "issues": "4"
+      "issues": "4",
+      "id": 3
+    },
+    {
+      "title": "Sailor Moon",
+      "author": "Naoko Takeuchi",
+      "genre": "Shoujo",
+      "issues": "1",
+      "id": 4
+    },
+    {
+      "title": "Sailor Moon",
+      "author": "Naoko Takeuchi",
+      "genre": "Shoujo",
+      "issues": "1",
+      "id": 5
     }
   ]
 }
