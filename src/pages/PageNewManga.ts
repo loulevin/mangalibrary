@@ -3,7 +3,7 @@ import axios from "axios";
 export const PageNewManga = () => {
   return /*html*/ `
 <div class="page pageNewManga">
-	<form action="data/mangal.json">
+	<form class="mangaForm">
 		<fieldset>
 			<legend>New Manga enter here</legend>
 			<label class="row">Titel: <input type="text" id="title"></label>
@@ -32,10 +32,10 @@ export const attachPageNewMangaEvents = () => {
 	btn?.addEventListener('click', (e: Event) => {
 		e.preventDefault();
 		
-		const elemTitle = document.querySelector<HTMLInputElement>('.contactForm #title');
-		const elemAuthor = document.querySelector<HTMLInputElement>('.contactForm #author');
-		const elemIssues = document.querySelector<HTMLInputElement>('.contactForm #issues');
-		const elemGenre = document.querySelector<HTMLInputElement>('.contactForm #genre');
+		const elemTitle = document.querySelector<HTMLInputElement>('.mangaForm #title');
+		const elemAuthor = document.querySelector<HTMLInputElement>('.mangaForm #author');
+		const elemIssues = document.querySelector<HTMLInputElement>('.mangaForm #issues');
+		const elemGenre = document.querySelector<HTMLInputElement>('.mangaForm #genre');
 
 
 		const title = elemTitle?.value;
@@ -49,6 +49,8 @@ export const attachPageNewMangaEvents = () => {
 			issues,
 			genre
 		};
+
+		console.log(formData);
 
 		(async () => {
 			const response = await axios.post(`${apiUrl}/mangas`, formData);

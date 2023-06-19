@@ -33,6 +33,23 @@
     },
     {
       "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "title": "Sailor Moon",
+      "author": "",
+      "issues": "",
+      "genre": "seinen",
+      "id": 8
+    },
+    {
+      "title": "Mein Star",
+      "author": "Aka Akasaka",
+      "issues": "4",
+      "genre": "seinen",
+      "id": 9
     }
   ]
 }
