@@ -1,11 +1,14 @@
 x json server installiert
 x json server einrichten. npm scripts api npm run api
-- rest.client installtion installieren
-- db.json erstellen (JavaScript (mangaitems))
-- test.rest erstellen
-    - ein get 
-    - ein post
-    - ein delete
+x rest.client installtion installieren
+x db.json erstellen (JavaScript (mangaitems))
+x test.rest erstellen
+    x ein get 
+    x ein post
+    x ein delete
+    x npm run dev erneuern
+        x dev startet frontend und backend
+        x frontend startet vite
 - form anpassen um zu speichern
     - axios installieren
 - info seite 
